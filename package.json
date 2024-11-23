@@ -1,27 +1,24 @@
 {
   "name": "ogongoweb",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set \"NODE_OPTIONS=--openssl-legacy-provider\" && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "eslint": "^9.15.0",
+    "firebase": "^11.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.28.0",
+    "react-scripts": "^5.0.1",
+    "svgo": "^3.3.2",
+    "web-vitals": "^4.2.4"
   },
   "browserslist": {
     "production": [
@@ -34,5 +31,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+    "@babel/plugin-transform-optional-chaining": "^7.25.9"
   }
 }
